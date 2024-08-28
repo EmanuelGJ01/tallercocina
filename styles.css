@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --blue: rgb(215, 246, 255);
+}
+
+body{
+    background-color: var(--blue);
+    color: #333;
+    max-width: 100%;
+}
+
+.btn__default{
+    background-color: #333;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    display: inline-flex;
+    border: 1px solid #333;
+    transition: all .3s ease-in-out;
+}
+
+.btn__default:hover{
+    background-color: transparent;
+    color: #333;
+}
+
+/*  */
+
+a,p{
+    font-size: 18px;
+    color: currentColor;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--blue);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.185);
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+}
+
+ul img{
+    width: 100px;
+}
+
+ul li a{
+    padding: 13px 20px;
+    transition: all .3s ease-in-out;
+}
+
+ul li a:hover{
+    background-color: #333;
+    color: white;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    max-width: 1280px;
+    padding: 0px 20px;
+    margin: 120px auto 120px auto;
+}
+
+/* hero */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image:radial-gradient(rgba(0, 0, 0, 0.139), rgba(0, 0, 0, 0.542), rgb(0, 0, 0)), url(./doughnuts-1868573_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* recetas */
+
+.recetas__flex{
+    display: flex;
+    gap: 20px;
+}
+
+.recetas__card{
+    width: 33%;
+}
+
+.recetas__card img{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/*Platillos*/
+.platillos_flex{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+   
+}
+
+.recetas__card{
+    width: calc(50% - 10px);
+}
+
+
+/*Footer*/
+footer{
+    background-color: var(--blue) ;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+}
+
+.cnt__footer{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+.cnt__footer :nth-child(2){
+    padding-right: 90px;
+    border-right: 1px solid rgba(53, 46, 46, 0.776);
+
+}
