@@ -106,10 +106,19 @@ main{
     width: 33%;
 }
 
-.recetas__card img{
+.recetas__card picture{
     width: 100%;
+    height: 350px;
     display: block;
     margin-bottom: 20px;
+
+}
+
+.recetas__card picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /*Platillos*/
